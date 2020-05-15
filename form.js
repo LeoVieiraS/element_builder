@@ -35,7 +35,9 @@ var inputNameElement = elementBuilder(
         type:"input",
         attributes: [
             {type:"text"},
-            {class:"form-control"}
+            {class:"form-control"},
+            {id:"name"},
+            {name:"name"}
         ]
     }
 )
@@ -57,7 +59,7 @@ var divInputEmailElement = elementBuilder(
     {
         type:"div",
         attributes:[
-            {class:"inputEmail"}
+            {class:"inputEmail"},
         ]
     }
 )
@@ -68,7 +70,9 @@ var inputEmailElement = elementBuilder(
         type:"input",
         attributes:[
             {type:"email"},
-            {class:'form-control'}
+            {class:'form-control'},
+            {id:"email"},
+            {name:"email"}
         ]
     }
 )
@@ -100,7 +104,9 @@ var inputPhoneElement = elementBuilder(
         type:"input",
         attributes:[
             {type:"number"},
-            {class:"form-control"}
+            {class:"form-control"},
+            {id:"phone"},
+            {name:"phone"}
         ]
     }
 )
@@ -133,8 +139,10 @@ var inputAddressElement = elementBuilder(
     {
         type:"input",
         attributes:[
-            {type:"number"},
-            {class:"form-control"}
+            {type:"text"},
+            {class:"form-control"},
+            {id:"address"},
+            {name:"address"}
         ]
     }
 )
@@ -162,7 +170,8 @@ var buttonInsertElement = elementBuilder(
     {
         type:"button",
         attributes:[
-            {class:"btn btn-primary"}
+            {class:"btn btn-primary"},
+            {id:"insert"}
         ],
         text:"insert"
     }
